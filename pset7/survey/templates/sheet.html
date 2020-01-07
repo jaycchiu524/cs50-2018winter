@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<h1 class="mb-3">Sheet</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Starter Pokemon</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for pkmtrainer in pkmtrainers %}
+        <tr>
+            <td>{{ pkmtrainer[0] }}</td>
+            <td>{{ pkmtrainer[1] }}</td>
+            <td>{{ pkmtrainer[2] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

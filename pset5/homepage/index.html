@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <title>
+                Jay Chiu - A Programming Newbie
+        </title>
+    </head>
+
+
+    <body>
+            <header>
+                <div class="jay-image">
+                    <div class="jay-text">
+                        <h1 style="font-size:50px">Jay Chiu</h1>
+                        <h3>A Programming Newbie</h3>
+                        <nav>
+                            <a href="#aboutme"> >About Me&lt;</a><br>
+                            <a href="#progress"> >Learning Progress&lt;</a><br>
+                            <a href="photos"> >Photos&lt;</a><br>
+                            <a href="#links"> >Links&lt;</a>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            
+            <section class="container">
+                <div class="content">
+                    <h2 id="aboutme">About Me</h2>
+                        <p class="text_me">
+                            Hey! I'm Jay, an unManly Man with unPowerful Power.<br>
+                            Work as a Chinese textbook editor.<br>
+                            Born and raised in <span style="color:navy;">Hong Kong</span>.<br>
+                            Spend most of time playing and learning.<br>
+                            Studied <span style="color:tomato;">Chinese language and literature</span>.<br>
+                            Graduated from <span style="color:purple;">The Chinese University of Hong Kong</span>.<br>
+                            Favourite Football team is <span style="color:blue;">Chelsea</span>.<br>
+                            Love Memes.<br>
+                            Most importantly, a <mark>Programming Newbie</mark>.
+                        </p>
+                </div>
+
+                <div class="content">
+                    <h2 id="progress">Learning Progress</h2>
+
+                        <div>
+                            <img src="img/pgicon/c_icon.png" alt="c_icon" style="width:70px;height:70px;float:left;margin-right:20px">
+                            C Programming: Basic Syntax; Concepts of Array and Pointer.
+
+                            <div class="progress" style="height:25px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">Beginner</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <img src="img/pgicon/html5_css3.png" alt="html5&css" style="width:70px;height:70px;float:left;margin-right:20px">
+                            HTML 5 & CSS 3: Basic Tagnames and Concept of Class.
+                            <div class="progress" style="height:25px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">Beginner</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <img src="img/pgicon/js_icon.png" alt="js_icon" style="width:70px;height:70px;float:left;margin-right:20px">
+                            JavaScript: I know it has nothing to do with Java.
+                            <div class="progress" style="height:25px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">New</div>
+                            </div>
+                        </div>
+                        <br>
+                </div>
+
+                <div class="content">
+                    <div class="photos">
+                        <img id="myImg" src="img/jay_logo.png" alt="logo" style="width:100%;max-width:300px">
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                            <!-- The Close Button -->
+                            <span class="close">&times;</span>
+
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" alt="logo" src="img/jay_logo.png">
+
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption"></div>
+
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById('myModal');
+
+                            // Get the image and insert it inside the modal - use its "alt" text as a caption
+                            var img = document.getElementById('myImg');
+                            var modalImg = document.getElementById("img01");
+                            img.onclick = function(){
+                              modal.style.display = "block";
+                              modalImg.src = this.src;
+                              captionText.innerHTML = this.alt;
+                            }
+
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
+
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function() {
+                              modal.style.display = "none";
+                            }
+                        </script>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <footer style="text-align:center">
+                <div class="addmargin">
+                    <a href="mailto:jaycchiu524@google.com"><img src="img/socialicon/email_icon.png" alt="Send Jay an Email." style="width:50px;height:50px"></a>
+                    <a href="https://www.facebook.com/jaychiuyunhang"><img src="img/socialicon/facebook_icon.png" alt="Jay's Facebook." style="width:50px;height:50px"></a>
+                    <a href="instagram://user?username=hobbitjayy"><img src="img/socialicon/instagram_icon.png" alt="Jay's Instagram." style="width:50px;height:50px"></a>
+                    <a href="https://twitter.com/hobbitjay524"><img src="img/socialicon/twitter_icon.png" alt="Jay's Twitter." style="width:50px;height:50px"></a>
+                    <a href="https://github.com/jaycchiu524"><img src="img/socialicon/github_icon.png" alt="Jay's Github, tho there'nothing yet." style="width:50px;height:50px"></a>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>

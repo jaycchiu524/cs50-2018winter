@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <!-- http://getbootstrap.com/docs/4.1/content/typography/ -->
+    <h1 class="mb-3">Form</h1>
+
+    <!-- http://getbootstrap.com/docs/4.1/components/forms/ -->
+    <form action="/form" method="post">
+
+    <div class="form-group">
+            <label for="yourName">What is your name?</label>
+            <input class="form-control" name="name" type="text" placeholder="Name">
+    </div>
+
+    <div class="form-group">
+            <select class="form-control" name="gender">
+                <option disabled selected value="">Gender</option>
+                <option name="gender" value="Male">Male</option>
+                <option name="gender" value="Female">Female</option>
+                <option name="gender" value="Others">Others</option>
+            </select>
+    </div>
+
+    <div class="form-group">
+        Which Kanto starter Pok&#233;mon do you choose?
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" name="starter" type="radio" value="Bulbasaur">
+                Bulbasaur
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" name="starter" type="radio" value="Charmander">
+                Charmander
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" name="starter" type="radio" value="Squirtle">
+                Squirtle
+            </label>
+        </div>
+    </div>
+
+        <!-- http://getbootstrap.com/docs/4.1/components/buttons/ -->
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+
+    <script>
+
+
+
+    </script>
+
+{% endblock %}
